@@ -8,14 +8,17 @@ export default function App() {
 
     const blogData = [
         {
-        headline: "Blogentry #1",
-        main: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
+            id: "1",
+            headline: "Blogentry #1",
+            main: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
         },
         {
+            id: "2",
             headline: "Blogentry #2",
             main: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
         },
         {
+            id: "3",
             headline: "Blogentry #3",
             main: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr"
         }
@@ -32,6 +35,7 @@ export default function App() {
             <Header />
             <Body />
             {blogData.map((blogItem) => <BlogEntry
+                key={blogItem.id}
                 title={blogItem.headline}
                 mainContent={blogItem.main}
             />)}
