@@ -2,6 +2,7 @@ import './App.css'
 import Header from "./Header.tsx";
 import Body from "./Body.tsx";
 import BlogEntry from "./BlogEntry.tsx";
+import Profile from "./Profile.tsx";
 
 export default function App() {
 
@@ -20,6 +21,12 @@ export default function App() {
         }
     ]
 
+    const myProfileData = {
+        name: "Anne",
+        codelang: "Java",
+        level: "Beginner"
+    }
+
     return (
         <>
             <Header />
@@ -28,6 +35,11 @@ export default function App() {
                 title={blogItem.headline}
                 mainContent={blogItem.main}
             />)}
+            <Profile
+                name={myProfileData.name}
+                codelang={myProfileData.codelang}
+                level={myProfileData.level}
+            />
         </>
     )
 }
