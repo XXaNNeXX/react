@@ -44,3 +44,19 @@ button {
     padding: 1em 2em 2em;
     max-width: 30%;
 }
+
+h3 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.blog-entry {
+    border-style: solid;
+    border-color: darkgray;
+    border-radius: 15%;
+    background-color: lightgray;
+    margin-top: 2.5em;
+    padding: 1em 2em 2em;
+    max-width: 40%;
+}
+
