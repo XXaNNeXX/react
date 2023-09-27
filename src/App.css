@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 1.3em;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.body {
+    font-family: "Comic Sans MS", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 7.7em;
+}
+
+img {
+    height: 5em;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 2.5em;
+}
+
+button {
+    background-color: olivedrab;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10%;
+    color: white;
+    font-family: "Comic Sans MS", sans-serif;
+    margin-top: 2em;
+
+}
+
+.field {
+    border-style: solid;
+    border-color: darkgray;
+    border-radius: 15%;
+    margin-top: 2.5em;
+    padding: 1em 2em 2em;
+    max-width: 30%;
+}
